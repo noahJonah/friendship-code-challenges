@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/weather.css">
+    <title>My Weather</title>
+</head>
+<body>
+    <div class="container">
+        <form id="weather-form" class="weather-search">
+            <input type="text" id="city-input" placeholder="Enter a city name here">
+            <button type="submit"><span class="search">Search</span></button>
+        </form>
+        <section class="today-weather">
+            <div class="city-descriptions" >
+                <h1 id="city">Dar es Salaam</h1>
+                <div class="weather-item weather-inline">
+                    <p id="current-day">Friday 16:50 </p><span>,</span>
+                    <p class="clouds" id="clouds-status">few clouds</span></p>
+                </div>
+                <div class="weather-item details">
+                    <p>Humidity: <span class="humidity" id="humidity">55</span>%, Wind: <span class="wind" id="wind">6.17</span>km/h</p>
+                </div>
+            </div>
+            <div class="temperature">
+                <img src="./images/sun-behind-cloud-svgrepo-com.svg" alt="" class="main-icon" id="icon"/>
+                <p class="temp" id="temperature">32</p>
+                <p class="temp-units">°C</p>
+            </div>
+        </section>
+        <section class="five-predictions">
+            <div>
+                <p>Sat</p>
+                <img src="./images/sun-behind-cloud-svgrepo-com.svg" alt="" class="main-icon" id="icon"/>
+                <span class="temps">
+                    <p>32°</p>
+                    <p>24°</p>
+                </span>
+            </div>
+            <div>
+                <p>Sun</p>
+                <img src="./images/clouds-svgrepo-com.svg" alt="" class="main-icon" id="icon"/>
+                <span class="temps">
+                    <p>32°</p>
+                    <p>25°</p>
+                </span>
+            </div>
+            <div>
+                <p>Mon</p>
+                <img src="./images/sun-behind-cloud-svgrepo-com.svg" alt="" class="main-icon" id="icon"/>
+                <span class="temps">
+                    <p>31°</p>
+                    <p>20°</p>
+                </span>
+            </div>
+            <div>
+                <p>Tue</p>
+                <img src="./images/sun-behind-cloud-svgrepo-com.svg" alt="" class="main-icon" id="icon"/>
+                <span class="temps">
+                    <p>30°</p>
+                    <p>25°</p>
+                </span>
+            </div>
+            <div>
+                <p>Wed</p>
+                <img src="./images/clouds-svgrepo-com.svg" alt="" class="main-icon" id="icon"/>
+                <span class="temps">
+                    <p>32°</p>
+                    <p>22°</p>
+                </span>
+            </div>
+        </section>
+    </div>
+    <script src="./js/weather.js"></script>
+</body>
+</html>

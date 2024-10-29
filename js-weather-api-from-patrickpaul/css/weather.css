@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Roboto-thin";
+    src: url(../fonts/Roboto-Light.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(255, 240, 222);
+    height: 100vh;
+    width: 100vw;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+.container {
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.804);
+}
+
+.weather-search {
+    margin: 2rem 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgb(255, 189, 107);
+}
+
+.weather-search input[type="text"] {
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 189, 107);
+    width: 70%;
+}
+
+.weather-search button {
+    background: url(../images/search-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 2rem;
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 189, 107);
+    background-color: rgb(255, 200, 133);
+    font-weight: 700;
+    width: 20%;
+    margin-left: 2.5rem;
+}
+
+.weather-search .search {
+    margin-left: 1rem;
+}
+
+.today-weather {
+    display: flex;
+    flex-direction: row;
+    margin: 2.5rem 2rem;
+    gap: 1rem;
+}
+
+.city-descriptions {
+    justify-content: flex-start;
+}
+
+.today-weather h1 {
+    margin: 0 0 2rem 0;
+}
+
+.weather-inline p {
+    display: inline;
+}
+
+.weather-item p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Roboto-thin";
+    margin-bottom: 0.5rem;
+}
+
+.main-icon {
+    width: 100%;
+    height: 7vh;
+}
+
+.temperature {
+    margin-left: auto;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 40%;
+    align-items: center;
+}
+
+.temperature .temp {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.temperature .temp-units {
+    font-size: 2rem;
+    align-self: flex-start;
+    padding-top: 3rem;
+}
+
+.five-predictions {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-evenly;
+    margin: 3.5rem 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid rgb(255, 189, 107);
+}
+
+.five-predictions .temps p {
+    display: inline;
+    padding: 0.9rem;
+}
+
+.five-predictions div {
+    text-align: center;
+}
+
+.five-predictions div p {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 500px) {
+    .weather-search {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 2rem 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgb(255, 189, 107);
+    }
+
+    .weather-search button {
+        background: url(../images/search-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2rem;
+        padding: 0;
+        margin: 0 0 0 auto;
+        border: none;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        align-items: start;
+        background-color: white;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .weather-search input[type="text"] {
+        background-color: rgb(255, 226, 190);
+        width: 80%;
+    }
+
+    .weather-search .search {
+        display: none;
+    }
+
+    .weather-search button {
+        background: url(../images/search-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 3rem;
+        padding: 1.7rem 0;
+        border: none;
+        width: 10%;
+    }
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
