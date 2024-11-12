@@ -28,6 +28,9 @@ function FetchWeatherData(city, api_key) {
             const current_icon = weather_data.list[0].weather[0].icon;
             const daily_weather = weather_data.list.filter(item => item.dt_txt.includes("12:00:00"));
 
+            
+            const current_temp = weather_data.list[0].main.temp;
+
             const cityTimezoneOffset = current_weather.timezone; 
             const current_date = new Date((current_weather.dt + cityTimezoneOffset) * 1000);
             const current_day_en_time = city_date.toLocaleDateString('en-US',
@@ -55,10 +58,20 @@ function FetchWeatherData(city, api_key) {
                 low_temps.push(temp_low);
             });
 
+
+            let point;
+            if (cloud_quantity < 20) {
+                point = 'High UV risk! Wear sunscreen.';
+                console.log(point);
+            } else if (cloud_quantity > 50) {
+                point = 'Low UV risk due to cloud cover.';
+                console.log(point);
+            }
+
             return {
                 city: weather_data.city.name,
                 current_day_en_time: current_day_en_time,
-                current_temp: weather_data.list[0].main.temp,
+                current_temp: current_temp,
                 current_icon: current_icon,
                 humidity: weather_data.list[0].main.humidity,
                 wind: weather_data.list[0].wind.speed,
@@ -66,7 +79,8 @@ function FetchWeatherData(city, api_key) {
                 icons: icons,
                 days: days,
                 high_temps: high_temps,
-                low_temps: low_temps
+                low_temps: low_temps, 
+                point: point
             };
 
         } else {
@@ -127,6 +141,10 @@ weather_form.addEventListener("submit", async (event) => {
             "#future-forecast", forecast.days, forecast.icons, 
             forecast.high_temps, forecast.low_temps
         );
+
+        // Weather points
+        set_weather.set_id_data(forecast.point, "point-point");
+
     } catch (error) {
         console.log("Error while fetching data:", error);
     }
