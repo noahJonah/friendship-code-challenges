@@ -96,14 +96,8 @@ class FetchMovies {
             console.error("Error fetching genre movies:", error);
             return []; 
         }
-    }
-    
-    
-    
+    }  
 }
-
-
-
 
 class DisplayMovie{
     constructor(api_url, api_key){
@@ -208,7 +202,9 @@ class DisplayMovie{
                                     ${similarMovies.results.map(movie => 
                                         `
                                             <ul class="similar-card">
-                                                <li><img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}"></li>
+                                                <li class="similar-img">
+                                                    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
+                                                </li>
                                                 <li class="similar-movie-title">${movie.title}</li>
                                                 <li><strong>Release Date:</strong> ${format_date(movie.release_date)}</li>
                                                 <li><strong>Rating:</strong> ${movieDetails.vote_average} / 10</li>
@@ -251,8 +247,6 @@ class DisplayMovie{
 }
 
 
-
-
 const fetchPopular = new FetchMovies(api_url, my_api_key);
 const displaying = new DisplayMovie(api_url, my_api_key);
 const search_input = document.getElementById('search');
@@ -271,7 +265,6 @@ const genreIdMapping = {
     "Romance": 10749,
     "Science Fiction": 878
 };
-
 
 genre_select.addEventListener("change", async (e) => {
     e.preventDefault();
@@ -318,7 +311,6 @@ search_input.addEventListener("input", async function() {
             suggestions_container.innerHTML = "";
             if (searched_movie.length > 0) {
                 suggestions_container.style.display = "block";
-                suggestions_container.classList.add("suggestions");
 
                 searched_movie.forEach(movie_name => {
                     const suggestion = document.createElement("div");
@@ -358,7 +350,6 @@ movie_form.addEventListener("submit", async (e) => {
     }
 })
 
-
 const popularArray = fetchPopular.fetchPopularMovies().then(popularArray => {
     console.log(popularArray);
     console.log(typeof popularArray);
@@ -386,4 +377,3 @@ const popularArray = fetchPopular.fetchPopularMovies().then(popularArray => {
 .catch(error => {
     console.error('Error fetching movies:', error);
 });
-
