@@ -3,15 +3,15 @@ Popcorn App is a movie exploration application that allows users to discover mov
 The app is designed to be responsive, ensuring an optimal user experience across a variety of devices.
 
 ## Features
-**Movie Listings:** The website allows users to browse through a collection of movies arranged from the recent once in the home page.
-**Detailed Information:** It allows viewing movie descriptions, release date, genre, runtime, budget, revenue, directors and ratings for each movie.
-**Search Functionality:** Quickly find a favorite movies using the search bar/input and search button.
-**Genres Filtering:** Filtering movies according to genres from a drop down menu
-**Responsive Design:** Optimized for desktops, tablets, and mobile devices.
+- **Movie Listings:** The website allows users to browse through a collection of movies arranged from the recent once in the home page.
+- **Detailed Information:** It allows viewing movie descriptions, release date, genre, runtime, budget, revenue, directors and ratings for each movie.
+- **Search Functionality:** Quickly find a favorite movies using the search bar/input and search button.
+- **Genres Filtering:** Filtering movies according to genres from a drop down menu
+- **Responsive Design:** Optimized for desktops, tablets, and mobile devices.
 
 ## Technologies Used
-**Frontend:** HTML, CSS and JavaScript
-**API:** The Movie Database (TMDb) API. Link to the docs ->> (https://www.themoviedb.org/documentation/api)
+- **Frontend:** HTML, CSS and JavaScript
+- **API:** The Movie Database (TMDb) API. Link to the docs ->> (https://www.themoviedb.org/documentation/api)
 
 ## Get The Source Codes By Cloning The Repository
    ```bash
@@ -26,7 +26,7 @@ The app is designed to be responsive, ensuring an optimal user experience across
 ![Movie Details](https://github.com/user-attachments/assets/4cc94e25-4e17-4686-8fca-ca5251502ace)
 
 ## License
-This project is licensed under the [GNU GENERAL PUBLIC LICENSE]([LICENSE](https://github.com/noahJonah/friendship-code-challenges?tab=GPL-3.0-1-ov-file#GPL-3.0-1-ov-file)).
+This project is licensed under the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## Contact
 Got some questions or feedback:
