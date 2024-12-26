@@ -26,7 +26,7 @@ The app is designed to be responsive, ensuring an optimal user experience across
 ![Movie Details](https://github.com/user-attachments/assets/4cc94e25-4e17-4686-8fca-ca5251502ace)
 
 ## License
-This project is licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE).
+This project is licensed under the [GNU GENERAL PUBLIC LICENSE]([LICENSE](https://github.com/noahJonah/friendship-code-challenges?tab=GPL-3.0-1-ov-file#GPL-3.0-1-ov-file)).
 
 ## Contact
 Got some questions or feedback:
