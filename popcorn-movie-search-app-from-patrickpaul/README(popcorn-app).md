@@ -30,6 +30,6 @@ This project is licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE).
 
 ## Contact
 Got some questions or feedback:
-**Name:** NOAH JONAH
-**Email:** noahjonah705@gmail.com
-**GitHub:** [noahJonah](https://github.com/noahJonah)
+- **Name:** NOAH JONAH
+- **Email:** noahjonah705@gmail.com
+- **GitHub:** [noahJonah](https://github.com/noahJonah)
