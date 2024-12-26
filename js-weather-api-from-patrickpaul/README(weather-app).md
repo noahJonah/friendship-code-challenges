@@ -10,8 +10,8 @@ It fetches real-time weather data using the OpenWeatherMap API. From ->> https:/
 - Responsive design for use on both desktop and mobile devices.
 
 ## Technologies Used
-**HTML, CSS and JavaScript.**
-**OpenWeatherMap API** which provides real-time weather data.
+- **HTML, CSS and JavaScript.**
+- **OpenWeatherMap API** which provides real-time weather data.
 
 ## Get The Source Codes By Cloning The Repository
    ```bash
@@ -51,5 +51,5 @@ This project is licensed under the [GNU General Public License](https://www.gnu.
 ## Contact
 For questions or feedback, please contact:
 - Name: NOAH JONAH
-- GitHub: noahJonah
+- GitHub: [noahJonah](https://github.com/noahJonah)
 - Email: noahjonah705@gmail.com
