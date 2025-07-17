@@ -1,8 +1,8 @@
 # Friendship Code Challenges
 
-Welcome to **Friendship Code Challenges** — a collection of fun, practical, and creative coding projects, friendly challenges from and my fellow devs.
+Welcome to **Friendship Code Challenges** a collection of fun, practical, and creative coding projects, friendly challenges from and my fellow devs.
 
-This repository is all about **learning through collaboration**, **growing through experimentation**, and pushing ourselves to solve real-world problems across a variety of domains — from web development and API integrations to Python scripting, Java building, mobile apps, and cybersecurity.
+This repository is all about **learning through collaboration**, **growing through experimentation**, and pushing ourselves to solve real-world problems across a variety of domains from web development and API integrations to Python scripting, Java building, mobile apps, and cybersecurity.
 
 ---
 
@@ -30,13 +30,13 @@ Want to improve or refactor an existing one?
 **Pull requests are welcome!**  
 Fork the repo, make your magic, and open a PR. Let’s grow together.
 
-> Collaboration over competition. Every contribution teaches us something new.
+> Collaboration over competition.
 
 ---
 
 ## License
 
-This project is licensed under the **GNU General Public License** — because freedom matters, and so does shared knowledge.
+This project is licensed under the **GNU General Public License** because freedom matters and so does shared knowledge.
 
 ---
 
